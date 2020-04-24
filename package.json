@@ -1,5 +1,6 @@
 {
   "name": "typing-game",
+  "homepage": "https://github.com/ShaxXxboz/type-it-gp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "install": "npm-git install"
+    "install": "npm-git install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -29,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
